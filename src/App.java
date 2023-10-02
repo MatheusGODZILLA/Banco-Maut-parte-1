@@ -39,6 +39,9 @@ public class App {
 
         switch (opcao) {
             case 1:
+                System.out.println("Informações do Usuário:");
+                System.out.println("Email " + conta.getUsuario().getEmail());
+
                 System.out.println("Informações do Cliente:");
                 System.out.println("Nome: " + conta.getCliente().getNome());
                 System.out.println("CPF: " + conta.getCliente().getCPF());
