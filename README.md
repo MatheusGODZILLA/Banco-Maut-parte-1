@@ -1,8 +1,11 @@
-## Banco Maut
+Atividade da Disciplina de 'Programação Orientada à Objetos' para implementar um sistema bancário com o fito de aprimorar e usar os conceitos de POO na prática.
 
-Atividade sobre a Disciplina de Programação Orientada à Objetos para implementar um sistema bancário com o fito de aprimorar e usar os conceitos de POO na prática.
+Curso Superior de Análise e Desenvolvimento de Sistemas
+Aluno: Matheus da Silva
+Professor: Jesiael Viana
 
-## Parte 1
+# Banco Maut
+## - Parte 1
 
 Nosso cliente, o Banco Maut,  solicitou um sistema financeiro para gestão de contas de seus clientes, por enquanto temos as seguintes informações (requisitos) sobre o sistema solicitado:
     
