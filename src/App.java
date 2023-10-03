@@ -12,8 +12,34 @@ public class App {
         String cpf = scanner.nextLine();
         System.out.print("Data de Nascimento: ");
         String dataNascimento = scanner.nextLine();
-        System.out.print("Endereço: ");
-        String endereco = scanner.nextLine();
+        
+        System.out.print("\nEndereço: ");
+
+        System.out.print("\nRua: ");
+        String rua = scanner.nextLine();
+
+        System.out.print("Número: ");
+        String numero = scanner.nextLine();
+
+        System.out.print("Complemento: ");
+        String complemento = scanner.nextLine();
+
+        System.out.print("Bairro: ");
+        String bairro = scanner.nextLine();
+
+        System.out.print("Cidade: ");
+        String cidade = scanner.nextLine();
+
+        System.out.print("Estado: ");
+        String estado = scanner.nextLine();
+
+        System.out.print("País: ");
+        String pais = scanner.nextLine();
+
+        System.out.print("CEP: ");
+        String cep = scanner.nextLine();
+
+        Endereco endereco = new Endereco(rua, numero, complemento, bairro, cidade, estado, pais, cep);
 
         Cliente cliente = new Cliente(nome, cpf, dataNascimento, endereco);
         Conta conta = new Conta("001", "001", 0, cliente);
@@ -39,10 +65,15 @@ public class App {
                     System.out.println("Nome: " + cliente.getNome());
                     System.out.println("CPF: " + cliente.getCPF());
                     System.out.println("Data de Nascimento: " + cliente.getDataNascimento());
-                    System.out.println("Endereço: " + cliente.getEndereco());
                     System.out.println("Número da Agência: " + conta.getNumeroAgencia());
                     System.out.println("Número da Conta: " + conta.getNumeroConta());
                     System.out.println("Saldo: R$" + conta.getSaldo());
+
+                    System.out.println("\nEndereço do Cliente:");
+                    System.out.println(endereco.getRua() + ", N°" + endereco.getNumero() + ", Complemento: " + endereco.getComplemento());
+                    System.out.println(endereco.getBairro() + ", " + endereco.getCidade() + ", " + endereco.getEstado());
+                    System.out.println("País: " + endereco.getPais());
+                    System.out.println("CEP: " + endereco.getCEP());
                     break;
 
                 case 2:
@@ -85,18 +116,44 @@ public class App {
                     break;
 
                 case 7:
-                    System.out.println("\n//-- Alterar Dados --//");
-                    System.out.print("Novo Nome: ");
-                    String novoNome = scanner.nextLine();
-                    cliente.setNome(novoNome);
-                    System.out.print("Nova Data de Nascimento: ");
-                    String novoDataNasc = scanner.nextLine();
-                    cliente.setDataNascimento(novoDataNasc);
-                    System.out.print("Novo Endereço: ");
-                    String novoEndereco = scanner.nextLine();
-                    cliente.setEndereco(novoEndereco);
-                    System.out.println("Informações atualizadas com sucesso.");
-                    break;
+                System.out.println("\n//-- Alterar Dados --//");
+                System.out.print("Novo Nome: ");
+                String novoNome = scanner.nextLine();
+                cliente.setNome(novoNome);
+                System.out.print("Nova Data de Nascimento: ");
+                String novoDataNasc = scanner.nextLine();
+                cliente.setDataNascimento(novoDataNasc);
+                System.out.println("Novo Endereço:");
+                
+                System.out.print("Rua: ");
+                String novaRua = scanner.nextLine();
+                
+                System.out.print("Número: ");
+                String novoNumero = scanner.nextLine();
+                
+                System.out.print("Complemento: ");
+                String novoComplemento = scanner.nextLine();
+                
+                System.out.print("Bairro: ");
+                String novoBairro = scanner.nextLine();
+                
+                System.out.print("Cidade: ");
+                String novaCidade = scanner.nextLine();
+                
+                System.out.print("Estado: ");
+                String novoEstado = scanner.nextLine();
+                
+                System.out.print("País: ");
+                String novoPais = scanner.nextLine();
+                
+                System.out.print("CEP: ");
+                String novoCep = scanner.nextLine();
+                
+                Endereco novoEndereco = new Endereco(novaRua, novoNumero, novoComplemento, novoBairro, novaCidade, novoEstado, novoPais, novoCep);
+                cliente.setEndereco(novoEndereco);
+                
+                System.out.println("Informações atualizadas com sucesso.");
+                
 
                 case 8:
                     System.out.println("Até logo!");
