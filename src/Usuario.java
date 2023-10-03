@@ -1,4 +1,4 @@
-private class Usuario{
+public class Usuario{
     private String email;
     private String senha;
     private Cliente cliente;
@@ -25,7 +25,7 @@ private class Usuario{
         this.senha = senha;
     }
 
-    public String getCliente() {
+    public Cliente getCliente() {
         return cliente;
     }
 }
