@@ -5,7 +5,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         // Criação do cliente
-        System.out.println("Bem-vindo ao banco. Por favor, insira seus dados para criar uma conta:");
+        System.out.println("Bem-vindo ao Banco Maut. Por favor, insira seus dados para criar uma conta:");
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
         System.out.print("CPF: ");
