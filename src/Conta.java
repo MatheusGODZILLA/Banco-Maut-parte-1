@@ -38,7 +38,7 @@ public class Conta {
     // Método para depositar dinheiro na conta
     public void depositar(double valor){
         saldo += valor;
-        transacao.adicionarTransacao("Depósito de " + valor);
+        transacao.adicionarTransacao("Depósito de R$" + valor);
         System.out.println("Depósito concluído com êxito");
     }
 
@@ -46,7 +46,7 @@ public class Conta {
     public void sacar(double valor){
         if (valor <= saldo){
             saldo -= valor;
-            transacao.adicionarTransacao("Saque de " + valor);
+            transacao.adicionarTransacao("Saque de R$" + valor);
             System.out.println("Saque concluído com êxito");
         } else {
             System.out.println("Saldo insuficiente");
@@ -58,7 +58,7 @@ public class Conta {
         if (valor <= saldo){
             saldo -= valor;
             destino.depositar(valor);
-            transacao.adicionarTransacao("Transferência de " + valor);
+            transacao.adicionarTransacao("Transferência de R$" + valor);
             System.out.println("Transferência concluída com êxito");
         } else {
             System.out.println("Saldo insuficiente");
