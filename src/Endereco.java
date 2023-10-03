@@ -79,7 +79,7 @@ public class Endereco {
         return CEP;
     }
 
-    public void setCEP(String cEP) {
-        CEP = cEP;
+    public void setCEP(String Cep) {
+        CEP = Cep;
     }
 }
