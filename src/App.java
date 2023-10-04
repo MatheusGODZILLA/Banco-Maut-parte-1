@@ -123,38 +123,42 @@ public class App {
                     System.out.print("Nova Data de Nascimento: ");
                     String novoDataNasc = scanner.nextLine();
                     cliente.setDataNascimento(novoDataNasc);
-                    System.out.println("Novo Endereço:");
                     
+                    System.out.println("\nNovo Endereço:");
                     System.out.print("Rua: ");
                     String novaRua = scanner.nextLine();
-                    
+                    endereco.setRua(novaRua);
+
                     System.out.print("Número: ");
                     String novoNumero = scanner.nextLine();
-                    
+                    endereco.setNumero(novoNumero);
+
                     System.out.print("Complemento: ");
                     String novoComplemento = scanner.nextLine();
-                    
+                    endereco.setComplemento(novoComplemento);
+
                     System.out.print("Bairro: ");
                     String novoBairro = scanner.nextLine();
-                    
+                    endereco.setBairro(novoBairro);
+
                     System.out.print("Cidade: ");
                     String novaCidade = scanner.nextLine();
-                    
+                    endereco.setCidade(novaCidade);
+
                     System.out.print("Estado: ");
                     String novoEstado = scanner.nextLine();
-                    
+                    endereco.setEstado(novoEstado);
+
                     System.out.print("País: ");
                     String novoPais = scanner.nextLine();
-                    
+                    endereco.setPais(novoPais);
+
                     System.out.print("CEP: ");
                     String novoCep = scanner.nextLine();
-                    
-                    Endereco novoEndereco = new Endereco(novaRua, novoNumero, novoComplemento, novoBairro, novaCidade, novoEstado, novoPais, novoCep);
-                    cliente.setEndereco(novoEndereco);
+                    endereco.setCEP(novoCep);
                 
                     System.out.println("Informações atualizadas com sucesso.");
                     break;
-                
 
                 case 8:
                     System.out.println("Até logo!");
